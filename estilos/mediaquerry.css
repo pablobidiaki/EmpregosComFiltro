@@ -1,0 +1,105 @@
+@media (max-width:1150px){
+    .infos-direita{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width:980px){
+    .infos-direita{
+        display: grid;
+        grid-template-columns: auto auto ;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width:860px){
+    .vaga, .ajuste{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .empresa{
+        text-align: center;
+    }
+
+    .dados-cima{
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .posicao{
+        margin-top: 20px;
+    }
+
+    .dados-baixo{
+        display: flex;
+        justify-content: center;
+        margin:20px;
+    }
+
+    .infos-direita{
+        display: flex;
+    }
+}
+
+@media (max-width:635px){
+    .infos-direita{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 10px;
+    }
+}
+
+@media (max-width:495px){
+    .vaga{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 80vw;
+    }
+}
+
+@media (max-width:412px){
+    .vaga{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 90vw;
+    }
+}
+
+@media (max-width:365px){
+    img{
+        margin: 0 auto;
+    }
+
+    .dados-cima{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dados-cima li{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 338px){
+    #aguardando p, #nenhumaVaga p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width:320px){
+    .infos-direita{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 10px;
+    }
+}

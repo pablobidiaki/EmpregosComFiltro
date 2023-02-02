@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquerry.css">
+    <title>Empregos</title>
+</head>
+<body>
+    <header>
+        <div class="filtros">
+            <select name="selectCargo" id="selectCargo">
+                <option class="selecione" value="todos">Todos</option>
+                <option value="full">Fullstack</option>
+                <option value="front">Front-end</option>
+                <option value="back">Back-end</option>
+            </select>
+            <select name="selectLevel" id="selectLevel">
+                <option class="selecione" value="todos">Todos</option>
+                <option value="junior">Júnior</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Sênior</option>
+            </select>
+        </div>
+        <button id="botao">Pesquisar</button>
+    </header>
+    <div id="container">
+    </div>
+    <div id="aguardando">
+        <p>Aguardando Informações ...</p>
+    </div>
+    <div id="nenhumaVaga">
+        <p>Nenhuma vaga encontrada !</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

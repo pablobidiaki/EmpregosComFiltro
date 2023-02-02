@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+header{
+    background-image: url(../images/bg-header-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: rgb(93, 165, 164);
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+body{
+    background-color: rgb(240, 250, 251)
+}
+
+li{
+    list-style-type: none;
+}
+
+select{
+    padding: 8px;
+    margin: 0px 40px;
+    background: rgba(255, 255, 255, 0.868);
+    border: none;
+    font-size: 18px;
+    color: black;
+    font-weight: 900;
+    width: 120px;
+}
+
+option{
+    font-size: 16px;
+}
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 81, 81);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: .5s;
+    transform: scale(1.1);
+    background-color: lightblue;
+    color: black;
+}
+
+.selecione{
+    font-size: 20px;
+}
+
+.filtros{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.vaga{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 15vw;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.304);
+}
+
+.dados-baixo, .infos-direita, .dados-cima{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ajuste{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.detalhes{
+    margin-left: 20px;
+}
+
+.empresa{
+    color: darkcyan;
+    font-weight: 900;
+    font-size: 17px;
+    margin-right: 20px;
+}
+
+.nova{
+    color: white;
+    margin-right: 20px;
+    background-color: darkcyan;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.destaque{
+    color:white;
+    background-color: #252525;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 900;
+}
+
+.posicao{
+    padding: 10px 0px;
+    font-size: 22px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.posicao:hover{
+    transition: .3s;
+    color: darkcyan;
+}
+
+.dados-baixo li{
+    color: lightslategray;
+    margin-right: 20px;
+}
+
+.infos-direita p{
+    margin-left: 10px;
+    background-color: rgb(237, 247, 246);
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(123, 182, 179);
+    font-weight: 900;
+}
+
+#aguardando, #nenhumaVaga{
+    margin-top: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+#aguardando p{
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    animation: blur 3s ease-in-out infinite;
+}
+
+#nenhumaVaga p {
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+@keyframes blur {
+    0%{
+        transform: translateY(0px);
+    }50%{
+        transform: translateY(10px);
+    }100%{
+        transform: translateY(0px);
+    }
+}
